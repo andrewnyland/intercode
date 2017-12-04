@@ -1,0 +1,19 @@
+a website builder that allows you to create html and css files by showing a rendered version. You click to add new elements, and you can edit the css in a css viewer. Instead of code, it has like in the website inspector panels where you click to add a attribute, and then can set the value from a range of options. You can slide to size the elements, which can be set to what unit they use (px, %, em, vw/vh, etc). Color could use a color editor (if wanted)), and elements can added to the js file with a single click (if only one accessor, use that one and add function to get them from the onload function, else, allow user to select how that element is accessed with js).
+
+for selecting a specific element from an array (gained from accessing by class)
+var origElement, elements = [], foundElementIndex;
+onload = function () {
+	elements = document.getElemenstByClassName("[CLASS]");
+	for elem in elements {
+		if (elem == origElement) {
+			foundElementIndex == i;
+		}
+	}
+}
+//document.getElementsByClassNames("[CLASS]")[foundElementIndex]
+//add to onclick of element
+function () {
+	origElement = this;
+}
+
+could have three optional panels, editors for; rendered version, css/attr/js/color, html. all can be moved to various parts of the page and reorganizes the others so they fit together.

@@ -1,0 +1,4 @@
+allow files to be downloaded from url (if logged in only?)
+elements have a special background while they are being created or edited.
+when user first goes to editor, is blank, with "click to begin project". When clicked, allows naming of project (select from name or unique url), have text at bottom "click and drag to create elements"?; when entered, creates directory and files, opens full editor with blank rendered version and attribute pane. Until an element is created, the site pane is the only one visible; shows basic attributes (meta [condensed], title, description, keywords [condensed], external stylesheets/script files [condensed]). Attributes are displayed as attribute, onclick allows editing of value, unclick somewhere else or enter submits the data.
+Allow renaming of projects, unless a project of the future name already exists. Simply check if the directory exists, and if not create it and move the files there, delete the old directory.

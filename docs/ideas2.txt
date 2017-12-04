@@ -1,0 +1,24 @@
+For now: store all projects in same folder as editor.
+
+root
+	editor.php
+	project1
+		index.html
+		style.css
+		script.js
+	project2
+	project3
+
+editor loads in files, allows creation of new project or load previous project when opened, displays rendered version and page with edits, handles updates to the loaded files.
+projects can be viewed live by going to the project name url: home.me/projectname/
+
+alternate: editor only allows creation of new projects, but will cache them until they are saved. to edit, go to project with url anchor of #edit which will prompt a login if the owner user hasn't already logged in.
+
+
+ultimately: username/password login to access files, each project has same/unique (if account is private) url. Can store name and unique url (after generated) in a text file in loaded project, the opposite accessed when user switches privacy.
+
+add cached version (cookies?) that can store the website and project data offline just in case the user loses connection. Maintains unique id to check against when client reconnects.
+
+either way: editor views both inline and computed css (from external file), when updated - sets inline values of element to defined value, inserts into and updates file on server.
+
+in editor: option to set interactables on or off (links can be accessed or disabled for ease of selecting elements). panel can be positioned anywhere on page, contains tab for page and one for attributes of current element. single click selects current element, click and drag creates new element - in current position and nested in parent element. Elements can be duplicated and moved, and dragging them out of their parent element moves them up in the structure.
